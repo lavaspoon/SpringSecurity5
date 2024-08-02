@@ -27,7 +27,7 @@ public class SampleController {
 
     @GetMapping("/dashboard")
     public String dashboard(Model model, Principal principal) {
-        model.addAttribute("message", "Hello " + principal.getName());
+        model.addAttribute("message", "Hello Dashboard " + principal.getName());
         return "dashboard";
     }
 
