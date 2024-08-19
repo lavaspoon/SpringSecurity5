@@ -16,11 +16,5 @@ public class SampleService {
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
         System.out.println(authentication);
         System.out.println(userDetails.getUsername());
-
-        /**
-        Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
-        Object credentials = authentication.getCredentials();
-        boolean authenticated = authentication.isAuthenticated();
-         **/
     }
 }
